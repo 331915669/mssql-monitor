@@ -1,0 +1,56 @@
+""
+"
+数据库文件信息"
+TYPE,FILE_Name,FILEGROUP_NAME,File_Location,FILESIZE_MB,USEDSPACE_MB,FREESPACE_MB,FREESPACE_%,AutoGrow
+LOG,dotnet_crm50sp1_log,,D:\temp1\ERP307\dotnet_erp30_log.LDF,38.38,3.11,35.27,91.90,"By 10% - Unrestricted [autogrowth by percent, BAD setting!]"
+ROWS,dotnet_crm50sp1,PRIMARY,D:\temp1\ERP307\dotnet_erp30_data.mdf,234.31,213.19,21.13,9.02,"By 10% - Unrestricted [autogrowth by percent, BAD setting!]"
+
+"
+数据库属性信息"
+name,collation_name,is_auto_close_on,is_auto_shrink_on,recovery_model_desc,page_verify_option_desc,is_auto_create_stats_on,is_auto_update_stats_on,is_published,log_reuse_wait_desc
+dotnet_erp307,Chinese_PRC_CI_AS,False,True,FULL,NONE,True,True,False,ACTIVE_TRANSACTION
+
+"
+获取数据库的备份信息"
+database_name,name,backup_start_date,physical_device_name
+
+"
+存在索引碎片的表:"
+DatabaseName,ObjectId,ObjectName,TableRows,IndexId,IndexDescription,IndexSize(MB),StatisticLastUpdated,AvgFragmentationInPercent
+dotnet_erp307,1817161619,data_dict,153164,26,NONCLUSTERED INDEX,0.0,2015-06-19 17:10:56.800000,100
+dotnet_erp307,1817161619,data_dict,153164,27,NONCLUSTERED INDEX,1.1,2014-07-02 15:06:56.143000,98.423
+dotnet_erp307,1549157210,rolap2_DataMartOlapConf,11136,1,CLUSTERED INDEX,1.1,2014-07-02 15:06:29.683000,98.19
+dotnet_erp307,1817161619,data_dict,153164,25,NONCLUSTERED INDEX,1.5,2015-06-26 20:55:56.393000,98.187
+dotnet_erp307,1720353889,rolap2_CubeMeasureTimeFilter,10708,1,CLUSTERED INDEX,1.8,2014-07-02 15:06:46.987000,97.326
+dotnet_erp307,544773048,myAction,14919,9,NONCLUSTERED INDEX,0.2,2015-06-19 18:21:03.853000,96.923
+dotnet_erp307,544773048,myAction,14919,10,NONCLUSTERED INDEX,0.3,2015-06-19 18:21:03.870000,95.506
+dotnet_erp307,544773048,myAction,14919,1,CLUSTERED INDEX,0.4,2015-06-19 17:10:36.617000,90.179
+dotnet_erp307,1817161619,data_dict,153164,26,NONCLUSTERED INDEX,1.8,2015-06-19 17:10:56.800000,88.194
+dotnet_erp307,962102468,pbcatcol,37597,0,HEAP,11.6,,61.616
+dotnet_erp307,1817161619,data_dict,153164,1,CLUSTERED INDEX,5.8,2014-07-02 14:45:19.463000,42.143
+
+"
+长时间没有使用的索引"
+OBJECT NAME,INDEX NAME,USER_SEEKS,USER_SCANS,USER_LOOKUPS,USER_UPDATES,last_used_time
+
+"
+MSSQL实例信息"
+SrvMemInGB,cpu_count,scheduler_count,affinity_type_desc,sqlserver_start_time,virtual_machine_type_desc
+7,4,4,AUTO,2016-05-16 08:39:17.137000,NONE
+
+"
+获得实例的属性"
+name,minimum,maximum,config_value,run_value
+max server memory (MB),128,2147483647,4096,4096
+name,minimum,maximum,config_value,run_value
+min server memory (MB),0,2147483647,0,16
+name,minimum,maximum,config_value,run_value
+max degree of parallelism,0,32767,0,0
+
+"
+查看是否已经开启跟踪"
+id,status,start_time,path
+
+"
+是否有游标没有关闭"
+session_id,cursor_id,name,creation_time
